@@ -1,13 +1,17 @@
 package HaffmansAlgorithm;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.TreeMap;
 
+import static RLE.RLE.compressRLE;
+
 
 public class HaffmansAlgorithm {
-    public static void main(String[] args) {
-        String text = "where there’s a will there’s a way";
+    public static void main(String[] args) throws IOException {
+        String text = "dddddeeeeettttt";
 
         TreeMap<Character, Integer> frequencies = countFrequency(text);
 
@@ -37,9 +41,17 @@ public class HaffmansAlgorithm {
 
         System.out.println("Размер исходной строки: " + text.getBytes().length);
         System.out.println("Длина сжатой строки: " + encoded.length());
-        // System.out.println("Биты сжатой строки: " + encoded); // сама строка
 
+        //String input = "";
+        System.out.println("Строка до сжатия: " + text);
 
+        //String compressed = compressRLE(text);
+        System.out.println("Строка после сжатия: " + encoded); // сама строка после
+
+        FileWriter writer = new FileWriter("/Users/macuser/Desktop/test1.txt", false);
+
+        writer.write(String.valueOf(encoded));
+        writer.close(); // закрытие потока
 
         //String decoded = huffmanDecode(encoded.toString(), tree);
 
@@ -70,7 +82,7 @@ public class HaffmansAlgorithm {
         return codeTreeNodes.get(0);
     }
 
-    /*private static String huffmanDecode(String encoded, CodeTreeNode tree) { // декомпрессор принимает в качестве параметров закодированную строку и дерево кодировок
+    private static String huffmanDecode(String encoded, CodeTreeNode tree) { // декомпрессор принимает в качестве параметров закодированную строку и дерево кодировок
         StringBuilder decoded = new StringBuilder();
 
         CodeTreeNode node = tree; // переменная - текущий узел, который рассматриваем, когда спускаемся по дереву // изначально он равен самому корневому узлу
@@ -82,7 +94,7 @@ public class HaffmansAlgorithm {
             }
         }
         return decoded.toString();
-    }*/
+    }
 
     private static class CodeTreeNode implements Comparable<CodeTreeNode> { // класс для представления кодового дерева
 

@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e28ce4-0acb-49e4-a03e-3a8fb8a9480b" name="Changes" comment="Starting state">
-      <change afterPath="$PROJECT_DIR$/src/HaffmansAlgorithm/HaffmansAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LZ77/LZ77.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LzHa/LZ77plusHaffman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RLE/RLE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HaffmansAlgorithm/HaffmansAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HaffmansAlgorithm/HaffmansAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -38,10 +42,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HaffmansAlgorithm">
     <configuration name="HaffmansAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HaffmansAlgorithm.HaffmansAlgorithm" />
       <module name="DataCompressionAlgorithms" />
@@ -55,9 +60,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LZ77" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LZ77.LZ77" />
+      <module name="DataCompressionAlgorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LZ77.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RLE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RLE.RLE" />
+      <module name="DataCompressionAlgorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RLE.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HaffmansAlgorithm" />
+        <item itemvalue="Application.LZ77" />
+        <item itemvalue="Application.RLE" />
       </list>
     </recent_temporary>
   </component>
